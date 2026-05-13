@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>活動性價比計算</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="button-container">
+    <button id="btn-dark_mountain" class="activity-btn" onclick="selectActivity('dark_mountain_2')">
+      <span class="text-bg">黑暗遠山-2</span>
+    </button>
+    <button id="btn-dark_mountain" class="activity-btn" onclick="selectActivity('dark_mountain_1')">
+      <span class="text-bg">黑暗遠山-1</span>
+    </button>
+    <button id="btn-chinese_wedding" class="activity-btn" onclick="selectActivity('chinese_wedding')">
+      <span class="text-bg">與卿書復刻</span>
+    </button>
+    <button id="btn-lu_personal" class="activity-btn" onclick="selectActivity('lu_personal')">
+      <span class="text-bg">長日為伴</span>
+    </button>
+    <button id="btn-wedding" class="activity-btn" onclick="selectActivity('wedding')">
+      <span class="text-bg">漫長的箴言</span>
+    </button>
+    <button id="btn-jewel" class="activity-btn" onclick="selectActivity('jewel')">
+      <span class="text-bg">珠寶(1+2)</span>
+    </button>
+    <button id="btn-ayn_2025" class="activity-btn" onclick="selectActivity('ayn_2025')">
+      <span class="text-bg">艾因生日25</span>
+    </button>
+    <button class="activity-btn" onclick="selectActivity('tide_2')">
+      <span class="text-bg">潮汐瓦解-2</span>
+    </button>
+    <button class="activity-btn" onclick="selectActivity('tide_1')">
+      <span class="text-bg">潮汐瓦解-1</span>
+    </button>
+    <button class="activity-btn" onclick="selectActivity('Mist_City_2')">
+      <span class="text-bg">霧隱二期</span>
+    </button>
+    <select class="activity-btn dropdown-menu" onchange="if(this.value) { selectActivity(this.value); this.selectedIndex = 0; }">
+      <option value="" disabled selected>看舊活動</option>
+      <option value="Mist_City_1">霧隱一期</option>
+      <option value="Midnight_Epilogue">暗夜-復刻</option>
+      <option value="The_Decameron">十日談</option>
+      <option value="Myths_Wonders">錄異記</option>
+    </select>
+  </div>
+
+  <br><br>
+
+  <div class="area">
+    <span>目前活動：<b id="CurrentActivityName">無</b></span>
+    <div id="input-row">
+      <label for="bonus">請輸入加成 (%): </label>
+      <input type="number" id="bonus" value="0" min="0" onkeydown="if(event.key === 'Enter') calculate()">
+      <button id="calculate-btn" onclick="calculate()">計算</button>
+    </div>
+  </div>
+  <div class="area">
+    <div id="special-items" style="width: 100%"></div>
+  </div>
+  <div class="area">
+    <div id="output" style="width: 100%"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
