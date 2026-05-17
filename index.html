@@ -8,6 +8,9 @@
 </head>
 <body>
   <div class="button-container">
+    <button id="btn-silan_personal" class="activity-btn" onclick="selectActivity('silan_personal')">
+      <span class="text-bg">長日為伴</span>
+    </button>
     <button id="btn-dark_mountain" class="activity-btn" onclick="selectActivity('dark_mountain_2')">
       <span class="text-bg">黑暗遠山-2</span>
     </button>
@@ -35,11 +38,9 @@
     <button class="activity-btn" onclick="selectActivity('tide_1')">
       <span class="text-bg">潮汐瓦解-1</span>
     </button>
-    <button class="activity-btn" onclick="selectActivity('Mist_City_2')">
-      <span class="text-bg">霧隱二期</span>
-    </button>
     <select class="activity-btn dropdown-menu" onchange="if(this.value) { selectActivity(this.value); this.selectedIndex = 0; }">
       <option value="" disabled selected>看舊活動</option>
+      <option value="Mist_City_2">霧隱二期</option>
       <option value="Mist_City_1">霧隱一期</option>
       <option value="Midnight_Epilogue">暗夜-復刻</option>
       <option value="The_Decameron">十日談</option>

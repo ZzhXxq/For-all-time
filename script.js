@@ -127,6 +127,19 @@ const activitiesData = {
       { name: "金幣300", note: "-" }
     ],
     color: "#5d4667"
+  },
+  silan_personal: {
+    name: "隨心休憩",
+    coin: 88,
+    stamina: 14,
+    material: [24, 24, 12, 22, 32, 20, 26, 32, 16, 16, 26, 26, 40, 40, 1000000, 1000000],
+    specialItems: [
+      { name: "夢境之羽", note: "升技能用" },
+      { name: "好感禮盒.司嵐", note: "升好感度，只會有司嵐的禮物" },
+      { name: "金幣300", note: "比較值" },
+      { name: "金幣100", note: "比較不值" }
+    ],
+    color: "#b5b6ff"
   }
 };
 
