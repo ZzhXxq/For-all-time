@@ -140,6 +140,21 @@ const activitiesData = {
       { name: "金幣100", note: "比較不值" }
     ],
     color: "#b5b6ff"
+  },
+  dark_light_night_shine: {
+    name: "漆燈夜照",
+    coin: 200,
+    stamina: 20,
+    material: [30, 35, 20, 30, 50, 35, 45, 50, 30, 30, 50, 50, 65, 65, 15, 40],
+    specialItems: [
+      { name: "老薄荷顏料", note: "" },
+      { name: "R卡", note: "在第二層商店，第一層消耗4000解鎖" },
+      { name: "R卡特技突破", note: "在第三層商店，第二層消耗4000解鎖" },
+      { name: "夢境之羽", note: "升技能用" },
+      { name: "神秘禮物", note: "升好感度" },
+      { name: "金幣", note: "" },
+    ],
+    color: "#517958"
   }
 };
 
