@@ -155,6 +155,29 @@ const activitiesData = {
       { name: "金幣", note: "" },
     ],
     color: "#517958"
+  },
+  Decameron_Epilogue_1: { // 十日談
+    name: "十日談復刻-一期商店",
+    coin: 280,
+    stamina: 14,
+    material: [30, 32, 16, 28, 43, 28, 36, 45, 25, 25, 41, 41, 58, 58, 12, 40],
+    specialItems: [
+      { name: "夢境之羽", note: "升技能用" },
+      { name: "R卡", note: "復刻專屬" },
+      { name: "頭像", note: ""}
+    ],
+    color: "#9a6e6e"
+  },
+  Decameron_Epilogue_2: { // 十日談
+    name: "十日談復刻-二期商店",
+    coin: 300,
+    stamina: 14,
+    material: [30, 34, 16, 28, 43, 30, 38, 48, 25, 25, 41, 41, 58, 58, 12, 42],
+    specialItems: [
+      { name: "夢境之羽", note: "升技能用" },
+      { name: "R卡", note: "復刻專屬" }
+    ],
+    color: "#9a6e6e"
   }
 };
 

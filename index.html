@@ -8,6 +8,12 @@
 </head>
 <body>
   <div class="button-container">
+    <button id="btn-Decameron" class="activity-btn" onclick="selectActivity('Decameron_Epilogue_2')">
+      <span class="text-bg">十日談復刻-2</span>
+    </button>
+    <button id="btn-Decameron" class="activity-btn" onclick="selectActivity('Decameron_Epilogue_1')">
+      <span class="text-bg">十日談復刻-1</span>
+    </button>
     <button id="btn-dark_light_night_shine" class="activity-btn" onclick="selectActivity('dark_light_night_shine')">
       <span class="text-bg">漆燈夜照</span>
     </button>
@@ -32,14 +38,10 @@
     <button id="btn-jewel" class="activity-btn" onclick="selectActivity('jewel')">
       <span class="text-bg">珠寶(1+2)</span>
     </button>
-    <button id="btn-ayn_2025" class="activity-btn" onclick="selectActivity('ayn_2025')">
-      <span class="text-bg">艾因生日25</span>
-    </button>
-    <button class="activity-btn" onclick="selectActivity('tide_2')">
-      <span class="text-bg">潮汐瓦解-2</span>
-    </button>
     <select class="activity-btn dropdown-menu" onchange="if(this.value) { selectActivity(this.value); this.selectedIndex = 0; }">
       <option value="" disabled selected>看舊活動</option>
+      <option value="ayn_2025">艾因生日25</option>
+      <option value="tide_2">潮汐瓦解-2</option>
       <option value="tide_1">潮汐瓦解-1</option>
       <option value="Mist_City_2">霧隱二期</option>
       <option value="Mist_City_1">霧隱一期</option>
